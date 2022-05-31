@@ -1,0 +1,76 @@
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 1000;
+    background: #1818182e;
+}
+
+.popup-content {
+  background-color: #0F0C14;
+  max-width: 520px;
+  height: 3d00px;
+  border-radius: 5px; 
+  padding: 1rem;
+  margin: 0 auto;
+  transform: translateY(1rem);
+  animation: slideUp 0.5s forwards;
+  margin-top: 7rem;  
+}
+
+@keyframes slideUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.popup-content .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.popup-content .content h2, p {
+  color: white;
+}
+
+.popup-save {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #a810c7;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: fit-content;
+}
+  
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+.autor {
+    color: #a810c7;
+}
+
+.btn-secondary, .btn-lg {
+    background-color: #a810c7;
+    border-color: #a810c7;
+}
